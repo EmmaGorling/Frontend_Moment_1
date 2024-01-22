@@ -30,6 +30,52 @@
         </nav>
     </header>
 
+    <main>
+        <section id="process">
+            <h2>Skapandeprocessen</h2>
+
+            <article>
+                <h3>NodeJS och NPM</h3>
+
+                <p>
+                    Till att börja med såg jag till att den senaste versionen av NodeJS
+                    var installerad. Efter detta gjorde jag en ny mapp på datorn för projektet,
+                    denna navigerade jag till via datorns terminal. 
+                    Ståendes i katalogen anropar jag "npm init -y", detta gör att en package.json-fil skapas. 
+                </p>
+                <p>
+                    Därefter anropas "npm install parcel --save-dev", då skapas mappen node_modules, denna läggs till i en .gitignore-fil för att inte versionshanteras.
+                    Sedan anropas "npm run build" i terminalen, då skapas katalogen dist, denna kommer sedan vara dden katalog som publiceras via Netlify.
+                </p>
+            </article>
+
+            <article>
+                <h3>Github och Netlify</h3>
+
+                <p>
+                    Jag gör min projektmapp till ett repo på Github, där jag sedan gör en development-branch för att inte påverka repots master-branch vid ändringar.
+                </p>
+                <p>
+                    I mitt kopplade Netlify-konto går jag sedan in och för att publicera repot som en webbplats, här är det då dist-katalogen som används.
+                </p>
+            </article>
+
+            <article>
+                <h3>Bilder, konervertering och komprimering</h3>
+
+                <p>
+                    Bilderna har lagts till med picture-taggen, i denna konverteras bilderna först och främst till Avif,
+                    och till WebP i andra hand, de minskas även till bredden 800px direkt i source-taggen. 
+                </p>
+                <p>
+                    För att enkelt kunna styra över hur mycket bilderna ska komprimeras hade jag kunnat skapa en sharp.config.json-fil, vilket jag gjorde från början. 
+                    Men när allt brjade strula och min webbplats inte kunde byggas autmatiskt på Netlify och jag fick göra om allt så gav jag upp och det blev ingen config-fil.
+                </p>
+            </article>
+
+            
+        </section>
+    </main>
 
     <footer>
         <p>
