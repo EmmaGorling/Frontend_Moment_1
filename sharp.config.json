@@ -4,9 +4,9 @@
         "chromaSubsampling": "4:4:4"
     },
     "webp": {
-        "nearLossless": true
+        "quality": 75
     },
     "avif": {
-        "lossless": true
+        "quality": 75
     }
 }
