@@ -4,13 +4,14 @@
   "description": "",
   "source": "src/index.html",
   "scripts": {
-    "start" : "parcel",
-    "build" : "parcel build"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.11.0"
+    "parcel": "^2.11.0",
+    "sharp": "^0.31.3"
   }
 }
