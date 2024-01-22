@@ -66,10 +66,13 @@ h2, h3 {
 }
 
 
-    /* Index */
+    /* Index & process */
     #index article, #process article {
-        margin: 40px 20px;
+        margin: 40px auto;
         max-width: 700px;
+    }
+    #index article p, #process article p {
+        margin: 0px 20px;
     }
 
     /* Images */
